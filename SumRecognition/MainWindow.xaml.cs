@@ -24,5 +24,10 @@ namespace SumRecognition
         {
             InitializeComponent();
         }
+
+        private void GeneratePicture(object sender, RoutedEventArgs e)
+        {
+            iSum.Source = SumImageGenerator.GetSumImage();
+        }
     }
 }
